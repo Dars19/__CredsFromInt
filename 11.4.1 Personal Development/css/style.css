@@ -1,0 +1,26 @@
+@font-face {
+    font-family: myFontSourceSerif;
+    src: url(../source-serif-pro/SourceSerifProRegular.ttf);
+}
+@font-face {
+    font-family: myFontSourceSerifBold;
+    src: url(../source-serif-pro/SourceSerifPro-Bold.ttf);
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.HeroSection{
+    background-color: #008dda;
+}
+
+.nameHeader{
+    font-family: myFontSourceSerifBold;
+    font-size: 50px;
+    color: #ace2e1;
+}
+p.nameHeader{
+    font-size: 30px;
+}
