@@ -1,0 +1,38 @@
+<%- include("./partials/Login_Partials/header_Login_Page.ejs") %>
+
+    <!-- This is going to be the home page -->
+
+    <section>
+        <div class="container"> <!-- Logo Section-->
+            <div class="row Logo">
+                Dars The Villain
+            </div>
+        </div>
+    </section>
+
+     <section> <!-- Login Form Section -->
+        <div class="container" id="formCon">
+            <div class="row formRectParent">
+                <div class="row formRectChild">
+                    <h1 id="LoginWord">Login</h1>
+                    <p id="Incorrect">Incorrect password!</p>
+
+                    <form action="action_Login" id="formCss" method="POST">
+                        <input type="text" name="username" placeholder="username">
+                        <br>
+                        <input type="password" name="password" placeholder="password">
+                        <br>
+                        <input type="submit" id="submitBtn" value="Login">
+                        <p>I forgot my password. Use this <a href="#">link</a> to reset!</p>
+                    </form>
+                    <form action="action_Register" method="POST">
+                        <input type="submit" id="submitBtn2" value="Register New Account">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+     </section>
+
+<%- include("./partials/Login_Partials/footer_Login_Page.ejs") %>
+    

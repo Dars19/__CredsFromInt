@@ -1,0 +1,37 @@
+<%- include('./partials/Profile_Partials/Header_Profile.ejs') %>
+
+    <section>
+        <div class="container Home">
+
+                <% if (user_Post.length === 0) { %>
+                    <div id="noPost">
+                        <div style="user-select: none;">
+                            No Post Yet!
+                        </div>
+                    </div>
+                <% } else { %>
+                    <% for( let index = 0; index < user_Post.length; index++ ) { %>
+                        <div class="row postToBe">
+                                <div id="<%= index %>" class="<%= "userPosted" %>">
+                                    <%= user_Post[index]%>
+                                </div>
+                                <div class="btn btn-Del">
+                                    <form action="/Post-Delete" method="post">
+                                        <input type="hidden" name="postID" value="<%= index %>">
+                                        <input type="submit" value="D" class="btn-Transparent">
+                                    </form>
+                                </div>
+                                <div class=" btn btn-Edit">
+                                    <form action="/Post-Edit" method="post">
+                                        <input type="hidden" name="postID" value="<%= index %>">
+                                        <input type="submit" value="E" class="btn-Transparent">
+                                    </form>
+                                </div>
+                        </div>
+                   <% } %>
+            <% } %>
+        </div>
+
+    </section>
+
+<%- include('./partials/Profile_Partials/Footer_Profile.ejs') %>

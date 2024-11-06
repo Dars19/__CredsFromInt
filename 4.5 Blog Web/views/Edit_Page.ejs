@@ -1,0 +1,6 @@
+<%- include('./partials/Profile_Partials/Header_Profile.ejs') %>
+    <form action="/Home" method="post">
+        <textarea class="BlogText" name="edited" id="editingArea"><%= user_Post[postIndex.postID] %></textarea>
+        <input class="Btn-primary" type="submit" value="submit">
+    </form>
+<%- include('./partials/Profile_Partials/Footer_Profile.ejs') %>

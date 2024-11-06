@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+}
+
+@media screen and (min-width: 540px){
+    body{
+        background-color: #95BF47;
+    }
+    
+    .Logo{
+        font-family: "League Spartan", sans-serif;
+        margin-top: 46px;
+        margin-left: 79px;
+        font-size: 30px;
+        color: #000;
+    }
+    
+    .container{
+        display: flex;
+    } 
+
+    #formCon{
+        justify-content: center;
+    }
+
+    .formRectParent{
+        position: relative;
+        top: 81px;
+        width: 433px;
+        height: 470px;
+        background-color: #64943E;
+        border-radius: 20px;
+        box-shadow: 3px 3px 10px rgb(241, 241, 123);
+    }
+    .formRectChild{
+        position: absolute;
+        top: -9px;
+        left: -10px;
+        width: 433px;
+        height: 470px;
+        background-color: #fff;
+        border-radius: 20px; 
+        text-align: center;
+    }
+
+    p{
+        font-family: "roboto condensed", sans-serif;
+        margin-top: 8px;
+        margin-bottom: 19px;
+        font-size: 16px;
+    }
+
+    #Incorrect {
+        font-size: 12px;
+        color: red;
+    }
+
+    #LoginWord{
+        margin-top: 55px;
+        color: #64943E;
+        font-size: 36px;
+        font-family: "League Spartan", sans-serif; 
+    }
+
+    input{
+        margin-bottom: 10px;
+        width: 352px;
+        height: 48px;
+        background-color: #FFF5E0;
+        border: 0px;
+        border-bottom: 1px solid black;
+        padding-left: 10px;
+    }
+
+    #submitBtn{
+        width: 362px;
+        height: 48px;
+        margin-top: 5px;
+        background-color: #64943E;
+        color: #fff;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 24px;
+        padding: 0px;
+        border-radius: 10px;
+    }
+
+    #submitBtn:hover{
+        width: 362px;
+        height: 48px;
+        margin-top: 5px;
+        background-color: #fff;
+        color: #000;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 24px;
+        padding: 0px;
+        border-radius: 10px;
+    }
+
+    #submitBtn2{
+        width: 362px;
+        height: 48px;
+        margin-top: 5px;
+        background-color: #fff;
+        color: #000;
+        font-size: 16px;
+        padding: 0px;
+        border-radius: 10px;
+    }
+
+    #submitBtn2:hover{
+        width: 362px;
+        height: 48px;
+        margin-top: 5px;
+        background-color: #64943E;
+        color: #fff;
+        padding: 0px;
+        border-radius: 10px;
+    }
+
+}

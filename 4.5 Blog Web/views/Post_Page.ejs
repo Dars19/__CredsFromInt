@@ -1,0 +1,19 @@
+<%- include('./partials/Profile_Partials/Header_Profile.ejs') %>
+
+<!-- Content -->
+  <section id="content">
+    <div class="container containContent">
+      <div class="NewComer">
+        <form action="/Post" method="POST">
+          <div>
+            <textarea name="blogPost" class="BlogText" placeholder="<%= "What's on your mind, "+ username +"?"  %>"></textarea>
+          </div>
+          <div>
+            <input class="Btn-primary" type="submit" value="submit">
+          </div>
+        </form>        
+      </div>
+    </div>
+  </section>
+
+  <%- include('./partials/Profile_Partials/Footer_Profile.ejs') %>
